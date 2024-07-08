@@ -3,8 +3,8 @@ from langchain_core.documents import Document
 
 
 def dataconveter():
-    product_data = pd.read_csv(r"C:\Users\brigh\PycharmProjects\E-commerce-Chatbot\data\flipkart_product_review.csv")
-
+    product_data=pd.read_csv("../data/flipkart_product_review.csv")
+    
     data = product_data[["product_title", "review"]]
 
     product_list = []
